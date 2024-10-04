@@ -19,7 +19,8 @@ import Scanlines from "../Scanlines";
 
 // for different content, edit sample.json, or,
 // preferrably, create a new JSON and load it here
-import json from "../../data/sample.json";
+// import json from "../../data/sample.json";
+import json from "../../data/ypsilon14.json";
 
 interface AppState {
     screens: Screen[];
@@ -183,7 +184,7 @@ class Phosphor extends Component<any, AppState> {
         const type = this._getDialogType(src.type);
 
         // TODO: support other dialog types
-        let content: any [] = null;
+        let content: any[] = null;
         if (type === DialogType.Alert) {
             content = src.content;
         }
@@ -596,7 +597,8 @@ class Phosphor extends Component<any, AppState> {
         if (content && (content.state !== state)) {
             content.state = state;
         }
-;   }
+        ;
+    }
 
     private _unloadScreen(): void {
         // go through the current screen elements, setting

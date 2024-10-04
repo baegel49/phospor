@@ -112,7 +112,7 @@
                 "===========",
                 "",
                 "SUMMARY:",
-                "All systems operating within acceptible parameters.",
+                "All systems operating within acceptable parameters.",
                 "",
                 "======",
                 "",
@@ -276,12 +276,12 @@
                         {
                             "target": "lockedDialog",
                             "type": "dialog",
-                            "shiftKey": false
+                            "shiftKey": true
                         },
                         {
                             "target": "airlocks",
                             "type": "link",
-                            "shiftKey": true
+                            "shiftKey": false
                         }
                     ]
                 },
@@ -292,12 +292,12 @@
                         {
                             "target": "lockedDialog",
                             "type": "dialog",
-                            "shiftKey": false
+                            "shiftKey": true
                         },
                         {
                             "target": "system",
                             "type": "link",
-                            "shiftKey": true
+                            "shiftKey": false
                         }
                     ]
                 },
@@ -582,7 +582,7 @@
                 "",
                 {
                     "type": "prompt",
-                    "prompt":"TYPE 'OK' TO BEGIN COUNTDOWN: ",
+                    "prompt": "TYPE 'OK' TO BEGIN COUNTDOWN: ",
                     "className": "alert cursor",
                     "commands": [
                         {
