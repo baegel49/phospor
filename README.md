@@ -15,8 +15,10 @@ Or you can skip doing it yourself and instead just check out [the Ypsilon 14 ter
 
 ## How can I host my React application using GitHub?
 
-`cd ./into/your-app-folder`
-`npm install gh-pages --save-dev`
+```
+cd ./into/your-app-folder
+npm install gh-pages --save-dev
+```
 Add properties to package.json file.
 
 The first property you need to add at the top level homepage, second you must define this as a string and the value will be "https://{your-username}.github.io/{repo-name}" , {repo-name} is the name of the GitHub repository you created it will look like this :
@@ -25,11 +27,13 @@ The first property you need to add at the top level homepage, second you must de
 
 Second in the existing scripts property you need to add predeploy and deploy.
 
-`"scripts": {`
-`//...`
-`"predeploy": "npm run build",`
-`"deploy": "gh-pages -d build"`
-`}`
+```
+"scripts": {
+//...
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
+```
 If you pushed everything already to Github, the last step is deploying. One liner:
 
 npm run deploy
